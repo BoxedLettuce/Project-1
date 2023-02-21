@@ -23,6 +23,8 @@ namespace Project_1
         int counterTwo;
         int counterThree;
         int counterSix;
+        decimal beerProfit;
+        int timesClicked = 0;
 
        
         public Form1()
@@ -34,14 +36,22 @@ namespace Project_1
         {
 
         }
-
+        /// <summary>
+        /// adds a number by 1
+        /// </summary>
+        /// <param =any int></param>
+        /// <param =adds a number 1></param>
         private void onePoint_Click(object sender, EventArgs e)
         {
             chiefsScoreCounter += 1;
             chiefsScore.Text= chiefsScoreCounter.ToString();
             
         }
-
+        /// <summary>
+        /// adds a number by 2
+        /// </summary>
+        /// <param =any int></param>
+        /// <param =adds a number by 2></param>
         private void twoPoints_Click(object sender, EventArgs e)
         {
             chiefsScoreCounter+= 2;
@@ -50,10 +60,10 @@ namespace Project_1
 
         private void Commercial_Click(object sender, EventArgs e)
         {
-            commercialCounter += 600000000;
-            commShown.Text= commercialCounter.ToString();
+            timesClicked = timesClicked += 1;
+            int countByOne = TimesOne(timesClicked);
 
-            
+
 
         }
 
@@ -71,37 +81,61 @@ namespace Project_1
             Console.ReadLine();
 
         }
-
+        /// <summary>
+        /// adds a number by 3
+        /// </summary>
+        /// <param =any int></param>
+        /// <param =adds a number by 3></param>
         private void threePoints_Click(object sender, EventArgs e)
         {
             chiefsScoreCounter += 3;
             chiefsScore.Text = chiefsScoreCounter.ToString();
         }
-
+        /// <summary>
+        /// adds a number by 6
+        /// </summary>
+        /// <param =any int></param>
+        /// <param =adds a number by 6></param>
         private void sixPoints_Click(object sender, EventArgs e)
         {
             chiefsScoreCounter += 6;
             chiefsScore.Text = chiefsScoreCounter.ToString();
         }
-
+        /// <summary>
+        /// adds a number by 1
+        /// </summary>
+        /// <param =any int></param>
+        /// <param =adds a number by 1></param>
         private void onePointE_Click(object sender, EventArgs e)
         {
             eaglesScoreCounter+= 1;
             eaglesScore.Text= eaglesScoreCounter.ToString();
         }
-
+        /// <summary>
+        /// adds a number by 2
+        /// </summary>
+        /// <param =any int></param>
+        /// <param =adds a number by 2></param>
         private void twoPointE_Click(object sender, EventArgs e)
         {
             eaglesScoreCounter += 2;
             eaglesScore.Text = eaglesScoreCounter.ToString();
         }
-
+        /// <summary>
+        /// adds a number by 3
+        /// </summary>
+        /// <param =any int></param>
+        /// <param =adds a number by 3></param>
         private void threePointE_Click(object sender, EventArgs e)
         {
             eaglesScoreCounter += 3;
             eaglesScore.Text = eaglesScoreCounter.ToString();
         }
-
+        /// <summary>
+        /// adds a number by 6
+        /// </summary>
+        /// <param =any int></param>
+        /// <param =adds a number by 6></param>
         private void sixPointE_Click(object sender, EventArgs e)
         {
             eaglesScoreCounter += 6;
